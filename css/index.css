@@ -1,8 +1,14 @@
+/* 
+  vermelho #ff1a1a
+  amarelo #ffcc00
+  meio rosa #ff6666 
+ */
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: #fff;
-    color: #000;
+    background: #ff6666;
+    color: #ff1a1a;
     font-size: 1.1em;
     line-height: 1.5;
     text-align: center;
@@ -27,13 +33,13 @@ body {
   }
 
   a {
-    color: #ff6600;
+    color: #ff6666;
     text-decoration: none;
     font-weight: bold;
   }
 
   a:hover {
-    color: #b3b3b3;
+    color: #ffcc00;
     text-decoration: none;
   }
   
@@ -53,37 +59,45 @@ body {
   }
   
   /*  BAR */
+  .bar-menu{
+    z-index: -1;    
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background: #000;
+    opacity: 0.9;
+  }
   
-  #bar {
-    color: #ff6600;
+  #bar {    
     min-height: 300px;
     text-align: center;
   }
   #bar ul{
+    text-align: left;
     list-style: none;    
   }    
   #bar li{
       display: inline;
-      padding-left: 3%;      
+      padding-right: 5px;     
   }
   
   #bar .bar-imagem {
     position: absolute;
-    background: #333
-      url("img/bar-img2.jpg");
+    background: #ff6666
+      url("../img/bar-img3.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 300px;
-    z-index: -1;
-    opacity: 0.5;
+    z-index: -2;    
   }
   
-  #bar h1 {
-    padding-top: 100px;
-    padding-bottom: 0;
+  #bar h1 {   
+    padding-top: 0;
+    padding-bottom: 0;    
   }
+
   
   #bar .quebra,
   #secao-a .quebra {
@@ -93,7 +107,7 @@ body {
   /* Seção A */
   
   #secao-a {
-    background: #eaeaea;
+    background: #ff6666;
     color: #333;
     padding-bottom: 2em;
   }
@@ -112,8 +126,8 @@ body {
   
   #secao-b li {
     margin-bottom: 1em;
-    background: #fff;
-    color: #333;
+    background: #ff6666;
+    color: #fff;
   }
   
   .descricao {
@@ -123,7 +137,7 @@ body {
   /* Seção C */
   
   #secao-c {
-    background: #fff;
+    background: #ffd11a;
     color: #333;
     padding: 2em;
   }
@@ -135,13 +149,21 @@ body {
   }
   
   #secao-d .box:first-child {
-    background: #2690d4;
-  }  
+    background: #ff6666;
+    color: #fff;
+  }   
 
   #secao-d img{
     max-width: 30px;
     padding: 5px;
+  }
+  
+  #secao-d a{
+    color: #fff;
+  }  
 
+  .titulo h2{
+    text-align: center;  
   }
 
   .box div{
@@ -150,7 +172,9 @@ body {
     align-items: center; 
     text-align: left;   
   }  
-  /* Footer */
+
+  
+  /* rodape */
  
   #rodape {
     padding: 1em;
@@ -158,7 +182,10 @@ body {
     color: #fff;
     text-align: center;
   }
-  
+  #rodape h2{
+    text-align: center;
+  }
+
   #rodape a {
     color: #2690d4;
     text-decoration: none;
@@ -171,6 +198,10 @@ body {
       display: grid;
       grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
     }
+    #bar h1 {
+      font-size: 80px;  
+    }
+
     #bar ul{
         list-style: none;
         font-size: 22px;
