@@ -52,7 +52,7 @@ body {
     color: #333;
   }
   
-  /* Header BAR */
+  /*  BAR */
   
   #bar {
     color: #ff6600;
@@ -133,18 +133,23 @@ body {
   #secao-d .box {
     padding: 2em;    
   }
-
-  #secao-d ul{
-     list-style: none; 
-     text-align: left;
-  }
   
   #secao-d .box:first-child {
     background: #2690d4;
+  }  
+
+  #secao-d img{
+    max-width: 30px;
+    padding: 5px;
+
   }
 
-
-  
+  .box div{
+    display: grid;
+    grid-template-columns: minmax(40px, 60px) auto;    
+    align-items: center; 
+    text-align: left;   
+  }  
   /* Footer */
  
   #rodape {
@@ -185,11 +190,10 @@ body {
       grid-column: 2/4;
     }
   
-    .box,
-    #rodape div {
+    .box{
       grid-column: span 2;
     }
-  
+
     #secao-b ul {
       display: flex;
       justify-content: space-around;
@@ -198,5 +202,15 @@ body {
     #secao-b li {
       width: 31%;
     }
+
+    #secao-d img{     
+      min-width: 50px;     
+    }
+
+    #rodape{
+      display: grid;
+      grid-template-columns: auto;      
+    }
+
   }
   
