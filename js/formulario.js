@@ -1,5 +1,4 @@
 //Validações do formulario
-
 /**
  * Validação do Campo NOME se é um nome mesmo
  * @param {*} nome  
