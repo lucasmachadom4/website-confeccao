@@ -3,47 +3,47 @@
   amarelo #ffcc00
   meio rosa #ff6666 
  */
-  
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background: #fff;
-    color: #ff1a1a;
+    color: #ffcc00;
     font-size: 1.1em;
     line-height: 1.5;
     text-align: center;
-  }
-  
-  img {
+}
+
+img {
     display: block;
     width: 100%;
     height: auto;
-  }
-  
-  h1,
-  h2,
-  h3 {
-    margin: 0;
-    padding: 1em 0;
-  }
-  
-  p {
-    margin: 0;
-    padding: 1em 0;
-  }
+}
 
-  a {
-    color: rgb(255, 25, 25);
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 1em 0;
+}
+
+p {
+    margin: 0;
+    padding: 1em 0;
+}
+
+a {
+    color: rgb(59, 59, 59);
     text-decoration: none;
     font-weight: bold;
-  }
+}
 
-  a:hover {
+a:hover {
     color: #f8f8f8;
     text-decoration: none;
-  }
-  
-  .btn {
+}
+
+.btn {
     display: inline-block;
     background: #333;
     color: #fff;
@@ -51,199 +51,239 @@ body {
     padding: 1em 2em;
     border: 1px solid #666;
     margin: 0.5em 0;
-  }
-  
-  .btn:hover {
+}
+
+.btn:hover {
     background: #fff;
     color: #333;
-  }
-  
-  /*  BAR */
-  .bar-menu{
-    z-index: -1;    
+}
+
+
+/*  BAR */
+
+.bar-menu {
+    z-index: -1;
     position: absolute;
     width: 100%;
     height: 100px;
-    background: #000;
+    background: #ff6666;
     opacity: 0.9;
-  }
-  
-  #bar {    
+}
+
+#bar {
     min-height: 300px;
     text-align: center;
-  }
-  #bar ul{
-    text-align: left;
-    list-style: none;    
-  }    
-  #bar li{
-      display: inline;
-      padding-right: 5px;     
-  }
-  
-  #bar .bar-imagem {
+}
+
+#bar ul {
+    text-align: center;
+    list-style: none;
+}
+
+#bar li {
+    display: inline;
+    padding-right: 5px;
+}
+
+#bar .bar-imagem {
     position: absolute;
-    background: #ff6666
-      url("../img/bar-img3.jpg");
+    background: #ff6666 url("../img/bar-img3.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 300px;
-    z-index: -2; 
-    opacity: 0.7;   
-  }
-  
-  #bar h1 {   
-    padding-top: 0;
-    padding-bottom: 0;    
-  }
+    z-index: -2;
+    opacity: 0.7;
+}
 
-  
-  #bar .quebra,
-  #secao-a .quebra {
+#bar h1 {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#bar .quebra,
+#secao-a .quebra {
     padding: 0 1.5em;
-  }
-  
-  /* Seção A */
-  
-  #secao-a {
+}
+
+
+/* Seção A */
+
+#secao-a {
     background: #ff6666;
     color: #333;
     padding-bottom: 2em;
-  }
-  
-  /* Seção B */
-  
-  #secao-b {
+}
+
+
+/* Seção B */
+
+#secao-b {
     padding: 2em 1em 1em;
-  }
-  
-  #secao-b ul {
-    list-style: none;    
+}
+
+#secao-b ul {
+    list-style: none;
     margin: 0;
     padding: 0;
-  }
-  
-  #secao-b li {
+}
+
+#secao-b li {
     margin-bottom: 1em;
     background: #ff6666;
     color: #fff;
-  }
-  
-  .descricao {
+}
+
+.descricao {
     padding: 1.5em;
-  }
-  
-  /* Seção C */
-  
-  #secao-c {
+}
+
+
+/* Seção C */
+
+#secao-c {
     background: #ffd11a;
     color: #333;
     padding: 2em;
-  }
-  
-  /* Seção D / Boxes */
-  
-  #secao-d .box {
-    padding: 2em;    
-  }
-  
-  #secao-d .box:first-child {
+}
+
+
+/* Seção D / Boxes */
+
+#secao-d .box {
+    padding: 2em;
+}
+
+#secao-d .box:first-child {
     background: #ff6666;
     color: #fff;
-  }   
+}
 
-  #secao-d img{
+#secao-d img {
     max-width: 30px;
     padding: 5px;
-  }
-  
-  #secao-d a{
+}
+
+#secao-d a {
     color: #000;
-  }  
+}
 
-  .titulo h2{
-    text-align: center;  
-  }
+.titulo h2 {
+    text-align: center;
+}
 
-  .box div{
+.titulo {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+.box div {
     display: grid;
-    grid-template-columns: minmax(40px, 60px) auto;    
-    align-items: center; 
-    text-align: left;   
-  }  
+    grid-template-columns: minmax(40px, 60px) auto;
+    align-items: center;
+    text-align: left;
+}
 
-  
-  /* rodape */
- 
-  #rodape {
+
+/* rodape */
+
+#rodape {
     padding: 1em;
     background: #000;
     color: #fff;
     text-align: center;
-  }
-  #rodape h2{
-    text-align: center;
-  }
+}
 
-  #rodape a {
+#rodape h2 {
+    text-align: center;
+}
+
+#rodape a {
     color: #2690d4;
     text-decoration: none;
-  }
-  
-  /* Media Queries */
-  
-  @media (min-width: 700px) {
+}
+
+input,
+textarea {
+    width: 95%;
+    height: 28px;
+    margin-bottom: 5%;
+    text-align: center;
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 4px;
+}
+
+textarea {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+input[type=button] {
+    height: auto;
+    width: 40%;
+    border: 2px solid rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: springgreen;
+}
+
+.erro {
+    color: rgb(139, 79, 79);
+    font-weight: bold;
+    text-shadow: black;
+}
+
+
+/* Media Queries */
+
+@media (min-width: 700px) {
     .grid {
-      display: grid;
-      grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
     }
     #bar h1 {
-      font-size: 80px;  
+        font-size: 80px;
     }
-
-    #bar ul{
+    #bar ul {
         list-style: none;
         font-size: 22px;
-      }
-
+    }
     #secao-a .content-text {
-      columns: 2;
-      column-gap: 2em;
+        columns: 2;
+        column-gap: 2em;
     }
-  
     #secao-a .content-text p {
-      padding-top: 0;
+        padding-top: 0;
     }
-  
     .quebra,
     #secao-b ul {
-      grid-column: 2/4;
+        grid-column: 2/4;
     }
-  
-    .box{
-      grid-column: span 2;
+    .box {
+        grid-column: span 2;
     }
-
     #secao-b ul {
-      display: flex;
-      justify-content: space-around;
+        display: flex;
+        justify-content: space-around;
     }
-  
     #secao-b li {
-      width: 31%;
+        width: 31%;
     }
-
-    #secao-d img{     
-      min-width: 50px;     
+    #secao-d img {
+        min-width: 50px;
     }
-
-    #rodape{
-      display: grid;
-      grid-template-columns: auto;      
+    #rodape {
+        display: grid;
+        grid-template-columns: auto;
     }
-
-
-  }
-  
+    textarea {
+        height: 250px;
+    }
+}
