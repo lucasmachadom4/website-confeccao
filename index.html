@@ -2,139 +2,173 @@
 <html lang="pt-br">
 
 <head>
-	<meta charset="UTF-8"> 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie-edge">
-	<title>MRM CONFECÇÔES</title>
-	<link rel="stylesheet" type="text/css" href="css/index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>MRM CONFECÇÔES</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/formulario.js"></script>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mask.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#telefone").mask("(00) 0 0000-0000")
+        })
+    </script>
 </head>
 
 <body>
-	<!-- CABEÇ -->
-	<header id="bar" class=grid>
-		<div class="bar-menu"></div>
-		<div class="bar-imagem"></div>
-		<div class="quebra">
-			<h1>MRM Confecções</h1>
-			<ul id="ul-menu">
-				<li><a href="#secao-a">Serviços</a></li>
-				<li><a href="#secao-c">Sobre Nós</a></li>
-				<li><a href="#secao-d">Fale Conosco</a></li>
-				<li><a href="#">Orçamento</a></li>
-			</ul>
-		</div>
-	</header>
+    <!-- CABEÇ -->
+    <header id="bar" class=grid>
+        <div class="bar-menu"></div>
+        <div class="bar-imagem"></div>
+        <div class="quebra">
+            <h1>MRM Confecções</h1>
+            <ul id="ul-menu">
+                <li><a href="#secao-b">Serviços</a></li>
+                <li><a href="#orcamento" onClick="exibirFormulario()">Orçamento</a></li>
+                <li><a href="#sobrenos" onClick="exibirSobreNos()">Sobre Nós</a></li>
+                <li><a href="#secao-d">Fale Conosco</a></li>
+            </ul>
+        </div>
+    </header>
 
-	<!-- Conteudo 1 MAIN AREA-->
-	<main>
-		<!-- Seção A-->
-		<section id="secao-a" class="grid">
-			<div class="quebra">
-				<h2 class="titulo">Serviços</h2>				
-				<b>Trabalhamos na confecção de Uniformes, camisas, calças sociais, bermudas, vestidos, bordados, entre outros.</b>				
-			</div>
-		</section>
-		<!-- Seção B-->		
-		<section id="secao-b" class="grid">
-			<ul>
-				<li>
-					<div>
-						<img src="img/servico-uniforme.jpg"
-							alt="">
-						<div class="descricao">
-							<h3 class="titulo">Uniformes</h3>
-							<p>Tanto Uniformes escolares quanto para empresas.</p>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div>
-						<img src="img/servico-camisa.jpg"
-							alt="">
-						<div class="descricao">
-							<h3 class="titulo">Roupas</h3>
-							<p>Camisas, calças sociais, bermudas, vestidos, roupas para o dia dia.</p>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div>
-						<img src="img/servico-bordado.jpg"
-							alt="">
-						<div class="descricao">
-							<h3 class="titulo">Bordados</h3>
-							<p>Bordados</p>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</section>
+    <!-- Conteudo 1 MAIN AREA-->
+    <main>
+        <!-- Seção A-->
+        <section id="secao-a" class="grid">
+            <div class="quebra"></div>
+        </section>
+        <!-- Seção B-->
 
-		<!-- Seção C-->
-		
-		<section id="secao-c" class="grid">
-			<div class="quebra">
-				<h2 class="content-title">Sobre Nós</h2>
-				<p>Desde 2004, a MRM Confecções vem se destacando ao longo dos anos pela sua diversidade de produtos e serviços. 
-					Atendemos nossos clientes nos mais diferentes produtos, confeccionamos moletons, camisetas, camisas, calças, 
-					uniformes e bermudas. Atendemos diversos seguimentos para diferentes clientes, buscando o melhor atendimento 
-					e custo benefício a nossos clientes.
-				</p>
-				<p>Estamos localizados no setor leste de Goiânia Rua Antenor Nascente, Qd.45 – LT.17 - Parque das Amendoeiras, 
-					Goiânia - GO, 74780-410
-				</p>
-			</div>
-		</section>
+        <section id="secao-b" class="grid">
+            <div class="quebra">
+                <h2 class="titulo">Serviços</h2>
+                <b hidden="true">Trabalhamos na confecção de Uniformes, camisas, calças sociais, bermudas, vestidos,
+					bordados, entre
+					outros.</b>
+            </div>
+            <ul>
+                <li>
+                    <div>
+                        <img src="img/servico-uniforme.jpg" alt="">
+                        <div class="descricao">
+                            <h3 class="titulo">Uniformes</h3>
+                            <p>Tanto Uniformes escolares quanto para empresas.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="img/servico-camisa.jpg" alt="">
+                        <div class="descricao">
+                            <h3 class="titulo">Roupas</h3>
+                            <p>Camisas, calças sociais, bermudas, vestidos, roupas para o dia dia.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="img/servico-bordado.jpg" alt="">
+                        <div class="descricao">
+                            <h3 class="titulo">Bordados</h3>
+                            <p>Bordados</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
 
-		<!-- Seção D-->
-		<section id="secao-d" class="grid">
-			<div class="box">
-				<div class="titulo">
-						<img src="" alt="">						
-						<h2 class="content-title">Fale conosco</h2>						
-				</div>				
-				<div>
-					<img src="img/ico-telefone.png" alt="">
-					<a href="#">(62) 3567-6182</a>
-				</div>
+        <!-- Seção A2 -->
+        <section id="secao-a" class="grid">
+            <div class="quebra">
+                <a href="#orcamento" onClick="exibirFormulario()" class="titulo" id="orcamento">Orçamento</a>
+                <div id="div-orcamento" hidden="true">
+                    <form action="#" method="POST" id="formOrcamento">
+                        <div id="erro"></div>
+                        <label>Nome:</label>
+                        <input type="text" required="true" id="nome" placeholder="Nome">
+                        <br>
+                        <label>E-mail:</label>
+                        <input type="email" required="true" id="email" placeholder="email@email.com">
+                        <br>
+                        <label>Telefone:</label>
+                        <input type="text" name="telefone" required="true" id="telefone" placeholder="(00) 0 0000-0000">
+                        <br>
+                        <label>Observações:</label>
+                        <textarea id="observacao"></textarea>
+                        <br>
+                        <input type="button" id="enviar" name="enviar" value="Enviar" onclick="validaFormulario()">
 
-				<div>
-					<img src="img/ico-whatsapp.png" alt="">
-					<a href="#">(62) 9 8500-3527</a>
-				</div>
-				<div>
-					<img src="img/ico-email.png" alt="">
-					<a href="#">mrmconfeccao@gmail.com</a>
-				</div>
-			</div>
+                    </form>
+                </div>
+            </div>
+        </section>
 
-			<div class="box">				
-				<div class="titulo">
-					<img src="img/ico-maps1.png" alt="">
-					<h2>Como chegar</h2>
-				</div>
-				<p>
-					<b>Antenor Nascente, Nº0 Qt45 Lt17 Parque das Amendoeiras - Goiãnia/GO, 74780 - 410</b> 							
-				</p>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2208.093918367332!2d-49.19581379720326!3d-16
+        <!-- Seção C-->
+
+        <section id="secao-c" class="grid">
+            <div class="quebra">
+                <a href="#sobrenos" onClick="exibirSobreNos()" class="titulo" id="sobrenos">Sobre Nós</a>
+                <div id="div-sobrenos" hidden="true">
+                    <p>Desde 2004, a MRM Confecções vem se destacando ao longo dos anos pela sua diversidade de produtos e serviços. Atendemos nossos clientes nos mais diferentes produtos, confeccionamos moletons, camisetas, camisas, calças, uniformes e
+                        bermudas. Atendemos diversos seguimentos para diferentes clientes, buscando o melhor atendimento e custo benefício a nossos clientes.
+                    </p>
+                    <p>Estamos localizados no setor leste de Goiânia Rua Antenor Nascente, Qd.45 – LT.17 - Parque das Amendoeiras, Goiânia - GO, 74780-410
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção D-->
+        <section id="secao-d" class="grid">
+            <div class="box">
+                <div class="titulo">
+                    <img src="" alt="">
+                    <h2 class="content-title">Fale conosco</h2>
+                </div>
+                <div>
+                    <img src="img/ico-telefone.png" alt="">
+                    <a href="#">(62) 3567-6182</a>
+                </div>
+
+                <div>
+                    <img src="img/ico-whatsapp.png" alt="">
+                    <a href="#">(62) 9 8500-3527</a>
+                </div>
+                <div>
+                    <img src="img/ico-email.png" alt="">
+                    <a href="#">mrmconfeccao@gmail.com</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="titulo">
+                    <img src="img/ico-maps1.png" alt="">
+                    <h2>Como chegar</h2>
+                </div>
+                <p>
+                    <b>Antenor Nascente, Nº0 Qt45 Lt17 Parque das Amendoeiras - Goiãnia/GO, 74780 - 410</b>
+                </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2208.093918367332!2d-49.19581379720326!3d-16
 				.65825375888071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935eedfd0e6be901%3A0x9950074b8ae54c63!2zTVJ
-				NIGNvbmZlY8Onw6Nv!5e0!3m2!1spt-BR!2sbr!4v1580165086962!5m2!1spt-BR!2sbr" width=100% height="" frameborder="0" 
-				style="border:0;" allowfullscreen=""></iframe>
-				
-			</div>
-			</div>
-		</section>
+				NIGNvbmZlY8Onw6Nv!5e0!3m2!1spt-BR!2sbr!4v1580165086962!5m2!1spt-BR!2sbr" width=100% height="" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 
-	</main>
+            </div>
+            </div>
+        </section>
 
-	<!--RODAPE-->
+    </main>
 
-	<footer id="rodape" class="grid">
-		<div>
-			©2019 Desenvolvido por
-			<a href="https://github.com/lucasmachadom4" target="_black">Lucas Machado Marques</a>
-		</div>
-	</footer>
+    <!--RODAPE-->
+
+    <footer id="rodape" class="grid">
+        <div>
+            ©2019 Desenvolvido por
+            <a href="https://github.com/lucasmachadom4" target="_black">Lucas Machado Marques</a>
+        </div>
+    </footer>
 </body>
 
 </html>
